@@ -1,0 +1,7 @@
+target/
+.tools/
+uploads/
+*.log
+.env
+test-results/
+node_modules/

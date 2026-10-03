@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#174c3c">
+  <meta name="description" content="Discover Sri Lankan destinations and plan your journey with local guides at Ceylon Travel.">
+  <title>Ceylon Travel | Discover Sri Lanka</title>
+  <link rel="icon" href="data:,">
+
+  <!-- ========================================================
+       SE2030 - Software Engineering - Group 2026-Y2-S1-MLB-B6G2-03
+       Member-wise Component Stylesheets
+       ======================================================== -->
+  <!-- Core Base Styles -->
+  <link rel="stylesheet" href="/css/main.css">
+  <!-- Member 1: Premasiriwardhana I. H. N. C. (IT25103630) - Chat Management -->
+  <link rel="stylesheet" href="/css/chat.css">
+  <!-- Member 2: Samarawickrama S. J. D. (IT25102542) - Booking Management -->
+  <link rel="stylesheet" href="/css/booking.css">
+  <!-- Member 3: Vidanage S. H. (IT25100632) - Guide Calendar & Auth Management -->
+  <link rel="stylesheet" href="/css/calendar.css">
+  <link rel="stylesheet" href="/css/auth.css">
+  <!-- Member 4: Fernando M. G. D. W. (IT25101548) - Places Management -->
+  <link rel="stylesheet" href="/css/places.css">
+  <!-- Member 5: Anuththara K. G. H. (IT25103422) - Review & Feedback Management -->
+  <link rel="stylesheet" href="/css/reviews.css">
+  <!-- Member 6: Anushan R. (IT25101716) - Gallery & Emergency Reporting -->
+  <link rel="stylesheet" href="/css/gallery.css">
+  <link rel="stylesheet" href="/css/reports.css">
+
+  <!-- Vendor Icons -->
+  <script src="/vendor/lucide.min.js" defer></script>
+
+  <!-- ========================================================
+       Member-wise JavaScript Modules
+       ======================================================== -->
+  <!-- Member 1: Premasiriwardhana I. H. N. C. (IT25103630) - Chat Module -->
+  <script src="/js/chat.js" defer></script>
+  <!-- Member 2: Samarawickrama S. J. D. (IT25102542) - Booking Module -->
+  <script src="/js/booking.js" defer></script>
+  <!-- Member 3: Vidanage S. H. (IT25100632) - Calendar & Auth Modules -->
+  <script src="/js/calendar.js" defer></script>
+  <script src="/js/auth.js" defer></script>
+  <!-- Member 4: Fernando M. G. D. W. (IT25101548) - Places Module -->
+  <script src="/js/places.js" defer></script>
+  <!-- Member 5: Anuththara K. G. H. (IT25103422) - Reviews Module -->
+  <script src="/js/reviews.js" defer></script>
+  <!-- Member 6: Anushan R. (IT25101716) - Gallery & Reports Module -->
+  <script src="/js/gallery.js" defer></script>
+  <script src="/js/reports.js" defer></script>
+  <!-- Application Shell & Router (Loaded last to bind everything) -->
+  <script src="/js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <aside class="sidebar" id="sidebar">
+    <button class="icon-button mobile-close" data-action="menu" aria-label="Close navigation" title="Close navigation"><i data-lucide="x"></i></button>
+    <a class="brand" href="#discover"><span class="brand-icon"><i data-lucide="compass"></i></span><span>ceylon<span class="brand-small">TRAVEL</span></span></a>
+    <div class="nav-label">EXPLORE SRI LANKA</div>
+    <nav id="navigation" aria-label="Main navigation"></nav>
+    <div class="sidebar-bottom">
+      <span class="island-dot"></span> Made for the journey<br>
+      <small>Sri Lanka, one place at a time.</small>
+      <a href="#help">Help & support <i data-lucide="arrow-up-right"></i></a>
+    </div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar">
+      <div class="top-left">
+        <button class="icon-button mobile-toggle" data-action="menu" aria-label="Toggle navigation" title="Toggle navigation"><i data-lucide="menu"></i></button>
+        <span class="breadcrumb">Sri Lanka <span>/</span> <strong id="crumb">Discover</strong></span>
+      </div>
+      <div class="account" id="account"></div>
+    </header>
+    <main id="main" tabindex="-1"></main>
+    <footer>
+      <span>Ceylon Travel</span>
+      <span>Discover thoughtfully. Travel locally.</span>
+      <a href="#help">Help & support</a>
+    </footer>
+  </div>
+  <dialog id="dialog"><div id="dialog-body"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
