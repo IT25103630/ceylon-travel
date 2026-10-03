@@ -1,0 +1,171 @@
+/* =========================================================
+   Function: Tourist and Guide Chat Management
+   Member Name: Premasiriwardhana I. H. N. C.
+   Student ID: IT25103630
+   Role: Scrum Master
+   Course: SE2030 - Software Engineering - SLIIT
+   ========================================================= */
+
+.chat {
+  height: 600px;
+  max-height: calc(100vh - 250px);
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: 265px minmax(0, 1fr);
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.rooms {
+  border-right: 1px solid var(--line);
+  overflow: auto;
+}
+
+.room {
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  width: 100%;
+  background: white;
+  text-align: left;
+  padding: 20px 16px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.room.active {
+  background: #edf5ef;
+}
+
+.room span {
+  min-width: 0;
+}
+
+.room strong {
+  display: block;
+  font-size: 12px;
+}
+
+.room small {
+  display: block;
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 170px;
+}
+
+.thread {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+}
+
+.thread-title {
+  padding: 18px 22px;
+  border-bottom: 1px solid var(--line);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.messages {
+  flex: 1;
+  overflow: auto;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.message {
+  align-self: flex-start;
+  max-width: 80%;
+}
+
+.message.own {
+  align-self: flex-end;
+}
+
+.bubble {
+  padding: 11px 14px;
+  background: #f0f3f1;
+  border-radius: 6px;
+  font-size: 13px;
+  line-height: 1.55;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.own .bubble {
+  background: #e2efe7;
+}
+
+.message small {
+  font-size: 9px;
+  color: var(--muted);
+}
+
+.message-tools {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-top: 4px;
+}
+
+.message-tools .icon-button {
+  min-width: 25px;
+  height: 24px;
+}
+
+.message-tools svg {
+  width: 12px;
+  height: 12px;
+}
+
+.composer {
+  padding: 14px 18px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  gap: 10px;
+}
+
+.composer input {
+  flex: 1;
+  min-width: 0;
+}
+
+.composer .btn {
+  min-width: 42px;
+  padding: 10px;
+}
+
+@media (max-width: 760px) {
+  .chat {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto minmax(0, 1fr);
+    height: 600px;
+    max-height: none;
+  }
+  .rooms {
+    max-height: 140px;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .room {
+    padding: 10px 14px;
+  }
+  .message {
+    max-width: 90%;
+  }
+  .thread-title {
+    padding: 12px 18px;
+  }
+  .messages {
+    padding: 15px;
+  }
+}
