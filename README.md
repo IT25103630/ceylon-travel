@@ -1,6 +1,6 @@
-# Ceylon Travel
+<h1 align="center">CeylonTravel</h1>
 
-> **Discover thoughtfully. Travel locally.**
+> <p align="center"><b>A Web-Based Tour Guide Booking Platform for Sri Lanka</b></p>
 
 Ceylon Travel helps visitors discover Sri Lankan destinations and plan trips with local guides. The platform brings destination listings, guide profiles, availability, bookings, messaging, reviews, a community gallery, support reports, and moderation into one web application.
 
