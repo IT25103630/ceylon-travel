@@ -1,0 +1,52 @@
+/* =========================================================
+   Function: Gallery Management
+   Member Name: Anushan R.
+   Student ID: IT25101716
+   Role: Developer
+   Course: SE2030 - Software Engineering (SLIIT)
+   ========================================================= */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.gallery-item {
+  min-width: 0;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.4;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.gallery-item h3 {
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+.gallery-item .actions {
+  justify-content: space-between;
+  margin-top: 6px;
+}
+
+.gallery-item small {
+  font-size: 10px;
+  color: var(--muted);
+}
+
+@media (max-width: 1150px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .gallery-grid {
+    gap: 15px;
+  }
+}
