@@ -1,0 +1,41 @@
+/* =========================================================
+   Function: Emergency and Complaint Reporting Management
+   Member Name: Anushan R.
+   Student ID: IT25101716
+   Role: Developer
+   Course: SE2030 - Software Engineering (SLIIT)
+   ========================================================= */
+
+.notice {
+  border-left: 3px solid var(--coral);
+  padding: 10px 16px;
+  background: #fff1ec;
+  font-size: 12px;
+  margin-bottom: 20px;
+  color: #854132;
+}
+
+.notification {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 19px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.notification.unread {
+  font-weight: 600;
+}
+
+.notification svg {
+  color: var(--green);
+}
+
+.notification p {
+  font-size: 12px;
+}
+
+.notification small {
+  font-size: 10px;
+  color: var(--muted);
+}
