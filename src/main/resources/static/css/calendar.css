@@ -1,0 +1,112 @@
+/* =========================================================
+   Function: Guide Calendar Management
+   Member Name: Vidanage S. H.
+   Student ID: IT25100632
+   Role: Developer
+   Course: SE2030 - Software Engineering - SLIIT
+   ========================================================= */
+
+.calendar-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 22px 0;
+}
+
+.calendar-toolbar h2 {
+  font-size: 20px;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+  background: white;
+}
+
+.weekday {
+  padding: 14px 8px;
+  background: #f0f4ef;
+  font-size: 11px;
+  color: var(--muted);
+  text-align: center;
+}
+
+.day {
+  border: 0;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  height: 90px;
+  padding: 12px;
+  background: white;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 12px;
+}
+
+.day.available {
+  background: #edf6ef;
+}
+
+.day.booked {
+  background: #fceee6;
+}
+
+.day.past {
+  color: #b0b8b3;
+  background: #f8faf8;
+}
+
+.day:not(:disabled):hover {
+  box-shadow: inset 0 0 0 2px #87a99a;
+}
+
+.day .tag {
+  font-size: 9px;
+  padding: 4px;
+}
+
+.legend {
+  display: flex;
+  gap: 20px;
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 17px;
+}
+
+.legend span {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+
+.legend b {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background: #d5eadb;
+}
+
+.legend b.booked {
+  background: #f4d9c9;
+}
+
+@media (max-width: 760px) {
+  .day {
+    height: 67px;
+    padding: 8px 5px;
+    font-size: 11px;
+  }
+  .day .tag {
+    font-size: 7px;
+    padding: 3px;
+  }
+  .weekday {
+    font-size: 10px;
+    padding: 10px 3px;
+  }
+}
