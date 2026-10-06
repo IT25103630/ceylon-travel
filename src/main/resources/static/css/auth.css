@@ -1,0 +1,49 @@
+/* =========================================================
+   Function: User Authentication and Profile Management
+   Member Name: Vidanage S. H.
+   Student ID: IT25100632
+   Role: Developer
+   Course: SE2030 - Software Engineering (SLIIT)
+   ========================================================= */
+
+.auth-tabs {
+  display: flex;
+  gap: 22px;
+  margin-bottom: 22px;
+}
+
+.auth-tabs button {
+  background: none;
+  border: 0;
+  padding: 0 0 8px;
+  border-bottom: 2px solid transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.auth-tabs .active {
+  border-color: var(--green);
+  color: var(--green);
+  font-weight: 600;
+}
+
+.profile-heading {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.profile-heading .avatar {
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+}
+
+.upload-preview {
+  width: 100%;
+  aspect-ratio: 2.7;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-top: 10px;
+}
