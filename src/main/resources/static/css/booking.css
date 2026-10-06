@@ -1,0 +1,52 @@
+/* =========================================================
+   Function: Booking Management
+   Member Name: Samarawickrama S. J. D.
+   Student ID: IT25102542
+   Role: Developer
+   Course: SE2030 - Software Engineering - SLIIT
+   ========================================================= */
+
+.booking-panel {
+  border: 1px solid var(--line);
+  background: white;
+  border-radius: 6px;
+  padding: 22px;
+  align-self: start;
+}
+
+.booking-panel .price {
+  font: 700 23px Manrope, Arial, sans-serif;
+  margin-bottom: 17px;
+}
+
+.booking-panel .price small {
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.booking-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.booking-journey-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.booking-journey-title {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.booking-journey-dates {
+  font-size: 11px;
+  color: var(--muted);
+}
